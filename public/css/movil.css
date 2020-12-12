@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color:white;
+    font-family:sans-serif;
+
+
+}
+h1{
+    font-size: 100px;   
+}
+#developer{
+    font-size:70px;
+}
+#languages img{
+    padding-left: 10px;
+    border-radius: 50%;
+    width: 100px;
+
+}

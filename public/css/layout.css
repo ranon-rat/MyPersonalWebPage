@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    color:white;
+    font-family:sans-serif;
+}
+h4{
+    line-height:0px
+}
+h1{
+    font-size: 50px;
+}
+#navegationVar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(6, 4, 29);
+}
+div:not(#navegationVar) {
+    padding-top: 100px;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}

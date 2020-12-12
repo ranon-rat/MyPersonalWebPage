@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        block style 
+        link(rel="stylesheet" href="/css/layout.css")
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js")
+        script(src="/script/index.js")
+        
+        title ranon-rat
+    body
+    div#navegationVar 
+        ul
+            li 
+                a(href="#aboutMe") about me
+            li 
+                a(href="#projects") projects
+            li 
+                a(href="#contact")
+            li    
+                a(href="https://twitter.com/ranon_rat") 
+                    img(width=30 src="/image/twitter.png")
+                    
+            li
+                a(href="https://discord.gg/e52RFh7Cg2")
+        
+                    img(width=30 src="/image/discord.png")
+            li
+                a(href="https://www.instagram.com/ranon_rat/")
+
+                    img(width=30 src="/image/instagram.png")
+            li 
+                a(href="https://github.com/ranon-rat")
+                    img(width=30 src="/image/github.png")
+    p
+    h1(id="developer" )      
+        script.
+            const sleep=(milliseconds)=> {
+                const date = Date.now();
+                let currentDate = null;
+                do {
+                    currentDate = Date.now();
+                } while (currentDate - date < milliseconds);
+            }
+            var i =0
+            setInterval(()=>{
+                if( i<14){   
+                    i++
+                }
+                else{
+                    i--
+                }
+                document.getElementById("developer").innerText="Im a developer".slice(0,i)
+                sleep(10)           
+            },200)
+    
+    block content
+
+    div(id = "aboutMe")
+        h1 About me          
+        h4 I am a programmer of 15 years old i really like coding,
+        h4   you gonna see creative things like a music generator or discord bot but. 
+        h4   is not the only thing i do , sometimes i like to make tcp servers or web pages .
+
+    div#languages
+        h1 I programm in 
+        a(href="https://developer.mozilla.org/es/docs/Web/JavaScript") 
+            img( src="/image/js.png") 
+    
+        a(href="https://golang.org/")
+            img( src="/image/gopher.png")
+    
+            a(href="https://www.arduino.cc/")
+            img(src="/image/arduino.png") 
+    block projects
+    div#contact
+        
+  
+    
